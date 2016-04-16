@@ -1,0 +1,11 @@
+// Namespaces to be used
+using System.Text;
+using System.Data.SqlClient;
+using System.Collections.Specialized;
+
+// Calling method
+   private string GetConnectionString()
+{
+ // "DBCon" is the name of the Connection String
+       return System.Configuration.ConfigurationManager.ConnectionStrings["DBCon"].ConnectionString;
+    }
